@@ -45,7 +45,7 @@ def main(num_options=2):
     then discuss the one final improved answer in depth. \
     Let's work this out in a step by step way to make sure we achieve our objective:"
     response = generate_response([
-        {"role": "user", "content": prompt},x
+        {"role": "user", "content": prompt},
     ])
     print()
     print()
