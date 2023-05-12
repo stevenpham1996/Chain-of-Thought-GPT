@@ -7,7 +7,7 @@ _ = load_dotenv(find_dotenv()) # read local .env file
 
 openai.api_key  = os.getenv('OPENAI_API_KEY')
 
-def generate_response(messages, model="gpt-3.5-turbo"): # Andrew mentioned that the prompt/ completion paradigm is preferable for this class
+def generate_response(messages, model="gpt-3.5-turbo"): 
     #messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
