@@ -14,5 +14,7 @@ For OpenAI free-plan users, which compresses the Reflextion and Dialog steps int
  
 
 ## How to:
-Save your `OPENAI_API_KEY` in an `.env` file   
+Create your OpenAI API key at: https://platform.openai.com/account/api-keys
+Save it to an environment variable named `OPENAI_API_KEY` in a .env file   
 Run `pip install -r requirement.txt`
+Run `python cot_gpt.py` or `python logic_gpt.py` 
