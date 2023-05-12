@@ -7,7 +7,7 @@ _ = load_dotenv(find_dotenv()) # read local .env file
 
 openai.api_key  = os.getenv('OPENAI_API_KEY')
 
-def generate_response(messages, model="gpt-3.5-turbo"): 
+def generate_response(messages, model="gpt-3.5-turbo", temperature=0.5): 
     #messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
@@ -15,7 +15,7 @@ def generate_response(messages, model="gpt-3.5-turbo"):
         max_tokens=2000,
         n=1,
         stop=None,
-        temperature=0.5, # this is the degree of randomness of the model's output
+        temperature=temperature, # this is the degree of randomness of the model's output
     )
     return response.choices[0].message["content"].strip()
 
