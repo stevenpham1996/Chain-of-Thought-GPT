@@ -3,7 +3,7 @@
 This python script utilizes the Chain-of-thought (CoT) prompting method highlighted in the paper published in the 4th of May, 2023 titled: [An automatically discovered chain-of-thought prompt generalizes to novel models and datasets](https://arxiv.org/abs/2305.02897) which significantly improves the performance of ChatGPT's outputs.
 
 ### Note:
-Due to the OpenAI's free API request per minute is limited to 3, the default argument of each thought | prompt is set to 1. 
+Due to the OpenAI's free API requests per minute is limited to 3, the default argument of each thought | prompt is set to 1. 
 
 ### Some important details from the paper:
 
