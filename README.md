@@ -7,7 +7,7 @@ The 2 python scripts utilize a prompting framework which combines the following 
 Alongside with the prompting method "Let’s Work This Out Step By Step..." to significantly boost the quality of ChatGPT's performance.
 
 #### - cot_gpt.py:
-Automatically execute a series of prompts following a 3-step framework of asking questions, self-reflection and self-evaluation to arrive at the most optimal answer.
+Automatically executes a series of prompts following a 3-step framework of asking questions, self-reflection and self-evaluation to arrive at the most optimal answer.
 
 #### - logic_gpt.py:   
 For OpenAI free-plan users, which compresses the Reflextion and Dialog steps into 1, due to the OpenAI's free API request per minute limit.
