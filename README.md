@@ -1,18 +1,18 @@
 # Chain-of-Thought-GPT
 
-This python script utilizes the Chain-of-thought (CoT) prompting method highlighted in the paper published in the 4th of May, 2023 titled: [An automatically discovered chain-of-thought prompt generalizes to novel models and datasets](https://arxiv.org/abs/2305.02897) which significantly improves the performance of ChatGPT's outputs.
+The 2 python scripts utilize a prompting framework which combines the following methods of :  
+- the Chain-of-thought (CoT) highlighted in the paper published in the 4th of May, 2023 titled: [An automatically discovered chain-of-thought prompt generalizes to novel models and datasets](https://arxiv.org/abs/2305.02897)
+- Reflexion published in the 20th of March, 2023 titled: [Reflexion: an autonomous agent with dynamic memory and self-reflection](https://arxiv.org/abs/2303.11366))
+- Dialogue Enabled Resolving Agents in the paper published in the 30th of March, 2023 titled: [DERA: Enhancing Large Language Model Completions with Dialog-Enabled Resolving Agents](https://arxiv.org/abs/2303.17071)
+alongside with the prompting method "Let’s Work This Out Step By Step..." to significantly boost the quality of ChatGPT's performance.
 
-### Note:
-Due to the OpenAI's free API requests per minute is limited to 3, the default argument of each thought | prompt is set to 1. 
+#### - cot_gpt:
+Automatically execute a series of prompts following a 3-step framework of asking questions, self-reflexion and self-evaluation to arrive at the most optimal answer.
 
-### Some important details from the paper:
+#### - logic_gpt:   
+For OpenAI free-plan users, which compresses the Reflextion and Dialog steps into 1, due to the OpenAI's free API requests per minute.
+ 
 
-- Chain-of-thought (CoT) prompting is a new method for improving the performance of LLMs.  
-CoT prompting works by first identifying the chain of thoughts that led to the LLM's output.  
-Once the chain of thoughts has been identified, it is then evaluated to see if it is logical and consistent.  
-If the chain of thoughts is not logical or consistent, it is then modified to make it so.  
-The paper evaluated the proposed method on a variety of tasks, including question answering, summarization, and translation.
-- The results showed that the proposed method was able to significantly improve the performance of LLMs on these tasks.  
-The paper concludes by discussing the implications of the proposed method.  
-The authors argue that the proposed method can be used to improve the performance of LLMs on a variety of tasks.  
-They also argue that the proposed method can be used to make LLMs more human-like in their reasoning.
+## How to:
+Save your `OPENAI_API_KEY` in an `.env` file   
+Run `pip install -r requirement.txt`
