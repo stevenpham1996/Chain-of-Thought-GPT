@@ -6,11 +6,11 @@ The 2 python scripts utilize a prompting framework which combines the following 
 - Dialogue Enabled Resolving Agents in the paper published in the 30th of March, 2023 titled: [DERA: Enhancing Large Language Model Completions with Dialog-Enabled Resolving Agents](https://arxiv.org/abs/2303.17071)  
 Alongside with the prompting method "Let’s Work This Out Step By Step..." to significantly boost the quality of ChatGPT's performance.
 
-#### - cot_gpt:
+#### - cot_gpt.py:
 Automatically execute a series of prompts following a 3-step framework of asking questions, self-reflection and self-evaluation to arrive at the most optimal answer.
 
-#### - logic_gpt:   
-For OpenAI free-plan users, which compresses the Reflextion and Dialog steps into 1, due to the OpenAI's free API requests per minute.
+#### - logic_gpt.py:   
+For OpenAI free-plan users, which compresses the Reflextion and Dialog steps into 1, due to the OpenAI's free API request per minute limit.
  
 
 ## How to:
